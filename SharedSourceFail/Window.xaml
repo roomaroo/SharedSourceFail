@@ -1,0 +1,28 @@
+﻿<!-- 
+    This window definition includes a local namespace. This causes
+    the build to fail, because the "Shared" namespace can't be found.
+-->
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:local="clr-namespace:MyNamespace">
+</Window>
+
+<!--
+    This version, without the namespace, builds OK
+-->
+<!-- 
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+</Window>
+-->
+
+
+<!--
+    This version with the namespace but specifying the assembly also builds OK
+-->
+<!-- 
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:local="clr-namespace:MyNamespace;assembly=SharedSourceFail">
+</Window>
+-->

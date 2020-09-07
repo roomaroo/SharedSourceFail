@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <ImportDirectoryBuildProps>false</ImportDirectoryBuildProps>
+    <OutputType>Library</OutputType>
+    <!-- Problem also happens using TargetFramework=net48 -->
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWpf>True</UseWpf>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySharedEnums" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

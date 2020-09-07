@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>MySharedEnums</id>
+    <version>1.0.0</version>
+    <authors>Olly Maunder</authors>
+    <owners>Olly Maunder</owners>
+    <description>Demonstrates build problem with shared files</description>
+  </metadata>
+  <files>
+    <file src="build\*" target="build" />
+  </files>
+</package>
